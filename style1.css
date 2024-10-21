@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animated {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#freepik_stories-tropical-island {
+  opacity: 0.9;
+  height: 50vh;
+  width: 50vh;
+}
+
+#azer {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(image/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  padding: 0 50px 0 100px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(116, 166, 216, 0.15);
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 50%;
+}
+
+.text-box {
+  color: #fff;
+  position: absolute;
+  bottom: 30%;
+}
+
+.text-box p {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.text-box h1 {
+  font-size: 190px;
+  line-height: 160px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(image/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  font-family: 'Roboto';
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+
+.text-box h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.text-box a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+
+}
+
+.text-box a span {
+  font-size: 30px;
+  line-height: 15px;
+  margin-left: 5px;
+}
+
+.social-icons {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+}
+
+.img {
+  height: 100px;
+
+}
+
+.about {
+  padding: 30px 10%;
+  background: url(image/az.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: white;
+  overflow: hidden;
+  padding: 100px 0;
+
+
+}
+
+.about-veille {
+  padding: 30px 10%;
+  background: url(image/ia.jpeg) no-repeat left;
+  background-size: 55%;
+  background-color: white;
+  overflow: hidden;
+  padding: 100px 0;
+
+
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: rgb(250, 250, 250);
+  padding: 150px;
+
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: black;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.apropos {
+  font-weight: 900;
+  font-size: 50px;
+  justify-self: right;
+  align-self: center;
+  text-align: center;
+  margin-top: 150px;
+  z-index: 999;
+  position: absolute;
+  font-family: 'Rubik';
+  color: #424242;
+
+
+}
+
+.veilletech {
+  text-align: center;
+  margin-top: 75px;
+  font-weight: 900;
+  font-size: 50px;
+  font-family: 'Rubik';
+  margin-bottom: 75px;
+
+
+}
+
+.competence {
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 100px;
+  margin-top: 25px;
+  font-family: 'Rubik';
+
+}
+
+.container-competences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  animation: 1s slidein;
+
+
+
+}
+
+.image-block {
+  flex-basis: calc(15% - 30px);
+  margin: 10px;
+
+}
+
+.image-block img {
+  display: block;
+  width: 8em;
+  height: 8em;
+  object-fit: fill;
+  transition: transform 0.3s;
+}
+
+.contact {
+  margin-top: 100px;
+}
+
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  z-index: 1;
+
+}
+
+form {
+  background: rgba(255, 255, 255, 0);
+  width: 500px;
+  padding: 30px;
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+.message-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.message-icon i {
+  font-size: 40px;
+}
+
+.message-icon span {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+form input,
+textarea {
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+#input-field {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#input-field i {
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.send-btn {
+  width: 100px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  padding: 6px 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
+.contactm {
+  text-align: center;
+ 
+  font-weight: 900;
+  font-size: 50px;
+  font-family: 'Rubik';
+}
+
+.container-projet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.container-projet2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.block {
+  width: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.5s
+}
+
+#image1:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+#image1 {
+  transition: 0.5s;
+  background-size: cover;
+}
+
+#image3:hover {
+  filter: brightness(90%);
+  background-image: url(image/hover-home.png);
+  transition: 0.5s;
+
+}
+
+#image3 {
+  transition: 0.5s;
+  background-image: url(image/home.png);
+  background-size: cover;
+  background-position: center;
+  cursor: auto;
+}
+
+#image2:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+#image2 {
+  transition: 0.5s;
+  background-size: cover;
+}
+
+#image1:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+#image1 {
+  transition: 0.5s;
+  background-size: cover;
+}
+
+#image3:hover {
+  filter: brightness(90%);
+  background-image: url(image/hover-home.png);
+  transition: 0.5s;
+
+}
+
+.image-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 66.66%;
+  z-index: -1;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.Projet {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 100px;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 100px;
+
+}
+
+footer {
+  position: static; /* Utilise une position statique */
+  width: 100%; /* Prend toute la largeur de la fenêtre */
+  background-color: black;
+  color: #fff;
+  padding: 20px 0; /* Ajoute un peu d'espace autour du contenu du pied de page */
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+.focontainer {
+  max-width: 960px;
+  margin: 0 auto; /* Centre le contenu du pied de page horizontalement */
+}
+
+.footer-content {
+  padding: 0 20px; /* Ajoute un peu d'espace autour du contenu */
+}
+
+.h3fo {
+  color: #ffffff; /* Couleur du titre */
+}
+
+.footext {
+  color: #ffffff; /* Couleur du texte */
+}
+
+
+
+
+.h1v {
+  size: 500px;
+}
+
+#image4 {
+  transition: 0.5s;
+  background-image: url(image/lacrypto.png);
+  background-size: cover;
+  background-position: center;
+  cursor: auto;
+}
+
+#image4:hover {
+
+  filter: brightness(50%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#image5 {
+  transition: 0.5s;
+  background-image: url(image/lacrypto.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+#image5:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+/* Styles généraux */
+
+/* Vos styles généraux ici... */
+
+/* Media queries pour les petits écrans (mobiles) */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+    /* Ajoutez un espacement sur les côtés */
+  }
+
+  .container-projet .block {
+    width: calc(50% - 20px);
+  }
+
+
+
+  .text-box h1 {
+    font-size: 28px;
+  }
+
+  .text-box p {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-projet .block {
+    width: 100%;
+  }
+
+  .text-box h1 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 12px;
+  }
+
+  .footer-content {
+    font-size: 10px;
+  }
+}
+
+.proj {
+  margin-bottom: -20px;
+  margin-left: 40px;
+}
+
+.proj2 {
+  margin-left: 440px;
+  margin-bottom: 20px;
+}
+
+.proj3{
+  margin-left: 850px;
+  margin-bottom: 20px;
+  margin-top: -45px;
+}
+
+.buttonsyn {
+  margin-top: -100px;
+  margin-right: 5px;
+  float: right;
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 5px ;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.buttonsyn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Ajoutez ce CSS dans votre fichier style1.css ou incorporer dans la balise <style> */
+.content-tech-inner:first-child {
+  clear: both;
+}
+.content-tech-inner p {
+  margin-bottom: 0;
+}
+#table-of-contents {
+  display: inline-block;
+  text-align: left;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 600px;
+  /* Ajustez la largeur maximale selon vos préférences */
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 350px;
+  padding-left: 30px;
+  margin-top: -100px;
+  border-radius: 10px;
+}
+
+.ul-veille {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li-veille {
+  margin-bottom: 5px;
+}
+
+.ul-veille a {
+  text-decoration: none;
+  color: #333;
+}
+
+.ul-veille a:hover {
+  text-decoration: underline;
+}
+
+/* Ajoute ces styles à ton fichier CSS en dehors de tout sélecteur body */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles pour la classe .content-tech */
+
+.content-tech {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.content-tech-inner {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  overflow: auto;
+}
+
+h2,
+h3 {
+  color: #333;
+}
+.h3fo{
+  color: #ffffff;
+}
+p {
+  color: #666;
+}
+
+strong {
+  color: #007bff;
+}
+
+.img-veille {
+  max-width: 40%; /* Ajustez la largeur maximale de l'image selon vos préférences */
+  height: auto; /* Assure une mise à l'échelle proportionnelle des images */
+  display: block; /* Élimine l'espace en bas de l'image */
+  margin: 10px 20px 10px 0; /* Ajoute un espace autour de l'image (haut, droite, bas, gauche) */
+  float: right; /* Aligne l'image à droite */
+  border-radius: 10px;
+}
+
+/* Ajoutez ces styles à la fin de votre fichier CSS */
+.article-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.article-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(30% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.article-block img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.article-block:hover img {
+  transform: scale(1.05);
+}
+
+.article-block h3 {
+  color: #333;
+  margin: 10px;
+}
+
+.article-block p {
+  flex-grow: 1;
+  color: #666;
+  margin: 10px;
+}
+
+.article-block a {
+  display: block;
+  padding: 10px;
+  background-color: #eeeeee;
+  color: #0b0b0b;
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto 30px;
+  /* Ajout d'une marge de 30px en bas du bouton */
+  border-radius: 10px;
+  font-weight: bold;
+
+}
+
+.article-block a:hover {
+  background-color: #4927d2;
+}
+
+.p-article {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.h1-article {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+/* competence */
+.competences-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+.texte-competence {
+  flex: 1;
+  padding: 60px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.texte-competence h2 {
+  color: #333; /* Couleur du titre */
+}
+
+.texte-competence p {
+  color: #181818; /* Couleur du texte */
+  
+}
+
+.image-competence {
+  flex: 1;
+  max-width: 50%; /* Ajuste la largeur maximale de la section image à 50% de la largeur du conteneur parent */
+  overflow: hidden; /* Masque tout contenu dépassant de la boîte */
+}
+p {
+  color: black;
+}
+
+
+.image-competence img {
+  width: 500px; /* Ajuste la largeur de l'image à 100% de la largeur de son conteneur parent */
+  height: 500px;
+  max-height: 60%; /* Ajuste la hauteur maximale de l'image à 100% de la hauteur de son conteneur parent */
+  display: block;
+ border-radius: 5px;
+ margin-bottom: 70px;
+}
+
+.image-block:hover img {
+  transform: scale(1.1); /* Ajustez la mise à l'échelle au survol selon vos préférences */
+}
+
+.v2v{
+  text-decoration: underline;
+}
